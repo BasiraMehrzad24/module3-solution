@@ -1,25 +1,20 @@
 * {
     font-family: 'Kalam', cursive;
 }
+
 .row {
     width: 100%;
 }
 
-@media (min-width:1199px),
-(max-width:1200px) {
-    .col-xl-12 {
-        background-color: gray;
-        color: black;
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .col-xl-12 {
-        width: 100%;
-    }
+.col-md-12 {
+    background-color: gray;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
 }
 
-@media (max-width:768px) and (min-width:500px) {
+@media (max-width:768px) {
     .container-fluid #row1 {
         margin-top: 150px;
     }
@@ -30,7 +25,7 @@
     }
 
     .container-fluid section p {
-        text-overflow: ellipsis;
+        text-transform: inherit;
     }
 }
 
@@ -49,11 +44,11 @@
 #collapsable-nav {
     margin-top: 28px;
 }
-
 #nav-list li {
     color: black;
     border: 2px solid black;
     margin: 1px;
+    background-color:antiquewhite ;
 }
 
 #nav-list a:hover {
@@ -68,4 +63,13 @@
 
 .navbar-header button.navbar-toggle {
     margin-top: 20px;
+}
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
 }
